@@ -1,0 +1,16 @@
+<?php
+/** @var Silex_GoogleAds_Block_Conversion $this */
+?>
+<?php
+/** @var Silex_GoogleAds_Helper_Data $helper */
+$helper = $this->helper('silex_googleads');
+?>
+<?php if ($helper->isEnabled()) : ?>
+    <script type="text/javascript">
+        <?php if ($this->getOrdersCount() > 0) : ?>
+            <?php foreach ($this->getOrderIds() as $orderId) : ?>
+                <?php echo $this->getConversionEventSnippet($orderId) ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </script>
+<?php endif; ?>

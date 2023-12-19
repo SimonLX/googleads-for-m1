@@ -1,0 +1,25 @@
+<?php
+/**
+ * @var Mage_Core_Block_Template $this
+ */
+?>
+<?php
+/** @var Silex_GoogleAds_Helper_Data $helper */
+$helper = $this->helper('silex_googleads');
+$accountId = $helper->getAccountNumber();
+?>
+<?php if ($helper->isEnabled() && !$this->helper('googleanalytics')->isGoogleAnalyticsAvailable()) : ?>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $accountId ?>"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag(
+            'config', '<?php echo $accountId ?>',
+            {
+                'anonymize_ip': true
+                <?php if ($helper->isDebugMode()) : ?>, 'debug_mode': true<?php endif; ?>
+            }
+        );
+    </script>
+<?php endif; ?>
