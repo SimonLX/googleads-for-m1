@@ -1,0 +1,6 @@
+app/code/community/Silex/GoogleAds/                          app/code/community/Silex/GoogleAds/
+app/design/frontend/base/default/layout/silex/google_ads.xml app/design/frontend/base/default/layout/silex/google_ads.xml
+app/design/frontend/base/default/template/silex/google_ads/  app/design/frontend/base/default/template/silex/google_ads/
+app/etc/modules/Silex_GoogleAds.xml                          app/etc/modules/Silex_GoogleAds.xml
+app/locale/en_US/Silex_GoogleAds.csv                         app/locale/en_US/Silex_GoogleAds.csv
+app/locale/fr_FR/Silex_GoogleAds.csv                         app/locale/fr_FR/Silex_GoogleAds.csv
