@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<layout version="0.1.0">
+<layout>
 	<default>
 		<reference name="head">
-            <block type="core/template" name="googleads.tag" template="silex/googleads/tag.phtml" />
+            <block type="core/template" name="googleads.tag" template="silex/google_ads/tag.phtml" />
         </reference>
 		<reference name="google_analytics">
 			<action method="setTemplate">
@@ -12,12 +12,12 @@
 	</default>
 	<checkout_onepage_success>
 		<reference name="head">
-			<block type="silex_googleads/conversion" name="googleads.conversion" template="silex/googleads/conversion.phtml" />
+			<block type="silex_googleads/conversion" name="googleads.conversion" template="silex/google_ads/conversion.phtml" />
 		</reference>
 	</checkout_onepage_success>
 	<checkout_multishipping_success>
 		<reference name="head">
-			<block type="silex_googleads/conversion" name="googleads.conversion" template="silex/googleads/conversion.phtml" />
+			<block type="silex_googleads/conversion" name="googleads.conversion" template="silex/google_ads/conversion.phtml" />
 		</reference>
 	</checkout_multishipping_success>
 </layout>

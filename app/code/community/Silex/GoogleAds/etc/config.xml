@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Silex_GoogleAds>
-             <version>1.0.1</version>
+             <version>1.0.2</version>
         </Silex_GoogleAds>
     </modules>
     <global>
@@ -26,7 +26,7 @@
         <layout>
             <updates>
                 <silex_googleads>
-                    <file>silex/googleads.xml</file>
+                    <file>silex/google_ads.xml</file>
                 </silex_googleads>
             </updates>
         </layout>
