@@ -3,6 +3,7 @@
     "description": "Google Ads basic integration module for Magento 1",
     "type": "magento-module",
     "license": "GPL-3.0",
+    "version": "2.0.1",
     "authors":[
         {
             "name":"Simon Laubet-Xavier",

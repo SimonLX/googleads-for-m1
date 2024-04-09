@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Silex_GoogleAds>
-             <version>2.0.0</version>
+             <version>2.0.1</version>
         </Silex_GoogleAds>
     </modules>
     <global>
